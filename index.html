@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="csrf-token" content="UtVbHxDfJpjGu8XJITZh08LGveAArwQSfxZAFjti">
+        <title>P1P1 Ikoria: Lair of Behemoths | Draftaholics Anonymous</title>
+        <meta name="description" content="Learn the cards. Start conversations. GET PICKING!">
+        <meta name="author" content="Draftaholics Anonymous">
+            <meta name="keywords"  content="magic,prerelease,p1p1,cards,mtg,gathering,draftaholics,draft,drafting,IKO" />
+    <link rel="canonical" href="https://apps.draftaholicsanonymous.com/p1p1/IKO" />
+    <meta property="og:title" content="P1P1 - Ikoria: Lair of Behemoths | Draftaholics Anonymous" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://apps.draftaholicsanonymous.com/p1p1/IKO" />
+    <meta property="og:image" content="https://apps.draftaholicsanonymous.com/storage/IKO.jpg" />
+    <meta property="og:site_name" content="Draftaholics Anonymous" />
+    <meta property="og:description" content="Learn the cards. Start conversations. GET PICKING!" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@DraftaholicsMTG" />
+    <meta name="twitter:title" content="P1P1 - Ikoria: Lair of Behemoths | Draftaholics Anonymous" />
+    <meta name="twitter:description" content="Learn the cards. Start conversations. GET PICKING!" />
+    <meta name="twitter:image" content="https://apps.draftaholicsanonymous.com/storage/IKO.jpg" />
+    <meta itemprop="image" content="https://apps.draftaholicsanonymous.com/storage/IKO.jpg" />
+
+        <script type="text/javascript" >
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-76602717-1', 'auto');            
+            ga('send', 'pageview');
+        </script>
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+        
+        
+        <!-- Check if the language is set to RTL, so apply the RTL layouts -->
+        <!-- Otherwise apply the normal LTR layouts -->
+        <link media="all" type="text/css" rel="stylesheet" href="https://apps.draftaholicsanonymous.com/css/frontend.css?id=2743b3949913cfe312a7">
+
+
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet"> 
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.11/sweetalert2.min.css">
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.11/sweetalert2.min.js"></script>
+
+        <style>
+            .bg-really-dark {
+                background-color: #1C1C1C;
+            }
+
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+            h1, h1.a-brunch-title,
+            h3.a-brunchy-question {
+                font-family: 'David Libre';  
+                text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+                font-weight:bold;        
+            }
+            body {
+                background-color: #1c1c1c;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                background-image: url('/storage/bg.jpg');
+            }
+            .fill-link {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+            }
+            .p1p1-card {
+                transition: box-shadow .5s ease-out;
+                overflow:hidden;
+            }
+            .p1p1-card:hover {
+                box-shadow: 0 0 20px rgba(0,0,0,0.6);
+            }
+            .p1p1-card .card-header {
+                transition: background-color .5s ease-out;
+                z-index: 1;
+                padding: 12px 6px
+            }
+            .card.p1p1-card:hover .card-header {
+                background-color: #ccc !important;
+            }
+            .p1p1-card .card-img-top {
+                transition: transform .5s ease-out;
+            }
+            .card.p1p1-card:hover .card-img-top {
+                transform: scale(1.2);
+            }
+
+            .set-symbol {
+                height: 24px;
+                max-width: 24px;
+                float: right;
+                font-size: 10px;
+            }
+            .set-title {
+                text-align: left;
+                padding: 0 6px;
+            }
+            .page-layout-block {
+                max-width: 1280px;
+                margin: 24px auto;
+            }
+        </style>
+        
+        
+    <link rel="stylesheet" type="text/css" href="https://apps.draftaholicsanonymous.com/css/p1p1.css">
+
+    <style>
+        .container {
+            max-width: 100% !important;
+        }
+    </style>
+
+    </head>
+    <body>
+        <div id="app">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-really-dark mb-4">
+    <a href="https://apps.draftaholicsanonymous.com" class="navbar-brand"><img height="50" src="https://apps.draftaholicsanonymous.com/images/logo_white.png" alt="Draftaholics Anonymous"></a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            
+            <li class="nav-item"><a href="http://draftaholicsanonymous.com" class="nav-link">Home</a></li>
+
+            
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuUser" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">P1P1</a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuUser">
+                                        <a href="https://apps.draftaholicsanonymous.com/p1p1" class="dropdown-item">All sets</a>
+
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/IKO" class="dropdown-item active">Ikoria: Lair of Behemoths</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/THB" class="dropdown-item ">Theros Beyond Death</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/MB1" class="dropdown-item ">Mystery Booster</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/ELD" class="dropdown-item ">Throne of Eldraine</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/M20" class="dropdown-item ">Core Set 2020</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/MH1" class="dropdown-item ">Modern Horizons</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/WAR" class="dropdown-item ">War of the Spark</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/RNA" class="dropdown-item ">Ravnica Allegiance</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/UMA" class="dropdown-item ">Ultimate Masters</a>
+                                            <a href="https://apps.draftaholicsanonymous.com/p1p1/GRN" class="dropdown-item ">Guilds of Ravnica</a>
+                                    </div>
+            </li>
+
+            
+                            
+
+              
+            
+            
+            <li class="nav-item"><a href="http://draftaholicsanonymous.com/feedback" class="nav-link">Feedback</a></li>
+
+            <li class="nav-item"><a href="https://twitch.tv/draftaholicsanonymous" class="nav-link" style="height:100%;background:url('//www.draftaholicsanonymous.com/wp-content/uploads/2019/01/Glitch_White_RGB.png');background-position:center;background-size:contain;background-repeat:no-repeat;opacity:0.7;margin-left:12px"></a></li>
+
+            <li class="nav-item"><a href="https://patreon.com/draftaholics" target="blank" class="nav-link" style="margin-left:12px"><i class="fab fa-patreon"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+            <div class="container">
+                                
+<div class="p1p1-page">
+
+    <h1 class="a-brunch-title text-center text-white">P1P1 - Ikoria: Lair of Behemoths</h1>
+
+    <h3 class="a-brunchy-question text-center">
+        <strong>Pick 1 Pack 1</strong><br />
+        Which Card Would You Choose?
+    </h3>
+
+    <div class="roller-container">
+
+        <div class="roller-col-left" data-brunch-candidate="6838">
+            <div class="roller-card brunch-candidate" data-brunch-candidate-id="6838">
+                <img src="/storage/cards/IKO/normal/53f63f40-46f1-4b9e-b447-ff9274f2b926.jpg" alt="Farfinder">
+            </div>
+            <div class="future-loaded" data-brunch-candidate-id="6819">
+                <img src="/storage/cards/IKO/normal/cc322744-5d8f-448d-b868-381bb86b68f9.jpg" alt="Cubwarden">
+            </div>
+        </div>
+
+        <div class="roller-col-right" data-brunch-candidate="6896">
+            <div class="roller-card brunch-candidate" data-brunch-candidate-id="6896">
+                <img src="/storage/cards/IKO/normal/fa7b28d8-b835-44a0-978d-cadfd392fff5.jpg" alt="Narset of the Ancient Way">
+            </div>
+            <div class="future-loaded" data-brunch-candidate-id="6901">
+                <img src="/storage/cards/IKO/normal/78619ffb-f514-4f9f-9d77-3ab49e045f7c.jpg" alt="Offspring&#039;s Revenge">
+            </div>
+        </div>
+
+    </div>
+
+            <div class="patreon-login text-center mt-4">
+            <a class="btn btn-outline-light btn-sm" href="https://apps.draftaholicsanonymous.com/login/patreon"><i class="fab fa-patreon"></i> Login with Patreon to track your picks!</a>
+        </div>
+        
+    <div class="page-layout-text page-layout-block wow fadeIn" data-wow-duration="1.5s">
+        <div class="inner brunchy-results-inner">
+
+            <div class="draftaholics-loader"><img src="https://apps.draftaholicsanonymous.com/images/draftaholics-loader.svg" /></div>
+
+            <div class="a-brunchy-result-set"></div>
+
+            <div class="a-brunchy-preview"><img src="https://apps.draftaholicsanonymous.com/images/placeholder.png" alt="Hover over a row to preview cards" /></div>
+
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <div id="cardLightbox">
+        <div class="cardLightboxInner">
+            <img src="https://apps.draftaholicsanonymous.com/images/placeholder.png" alt="Card Preview" class="cardLightboxImg">
+            <a href="#" class="btn-close">Close</a>
+        </div>
+    </div>
+</div>
+
+            </div><!-- container -->
+        </div><!-- #app -->
+
+        <!-- Scripts -->
+                <script src="https://apps.draftaholicsanonymous.com/js/manifest.js?id=01c8731923a46c30aaed"></script>
+
+        <script src="https://apps.draftaholicsanonymous.com/js/vendor.js?id=4a2489207377a14c72ab"></script>
+
+        <script src="https://apps.draftaholicsanonymous.com/js/frontend.js?id=c1ffdf0a3bd4ec6018e2"></script>
+
+            <script>
+
+        $(function(){
+
+            $('body').on('click', '.a-brunchy-result-set table tbody tr', function(){
+                $('.cardLightboxImg').attr('src', $(this).data('preview-image'));
+                $('#cardLightbox').fadeIn();
+            });
+            $('#cardLightbox').on('click', function(e){
+                e.preventDefault();
+                $(this).fadeOut(function(){
+                    $('.cardLightboxImg').attr('src', 'https://apps.draftaholicsanonymous.com/images/placeholder.png');
+                });
+            })
+
+            function updateBrunchyRoller(){
+                $('.roller-col-left .roller-card').each(function(i){
+                    $(this).removeClass('roller-card-0');
+                    $(this).removeClass('roller-card-1');
+                    $(this).removeClass('roller-card-2');
+                    $(this).removeClass('roller-card-3');
+                    $(this).removeClass('roller-card-4');
+                    $(this).addClass('roller-card-'+i);
+                    $(this).css('height', 100 - i*10 + '%');
+                    $(this).css('bottom', 20 * i + 'px');
+                    // $(this).css('right', 100 * i + 'px');
+                    $(this).css('z-index', 9 - i);
+                    $(this).find('img').css('opacity', 1 - .2 * i);
+                    $(this).find('.roller-card-data img').css('opacity', 1 - .1 * i);
+                    $(this).find('.roller-card-data span').css('opacity', 1 - .2 * i);
+                    $(this).find('.roller-card-data').css('font-size', 100 - 10*i + '%');
+                });
+                $('.roller-col-right .roller-card').each(function(i){
+                    $(this).removeClass('roller-card-0');
+                    $(this).removeClass('roller-card-1');
+                    $(this).removeClass('roller-card-2');
+                    $(this).removeClass('roller-card-3');
+                    $(this).removeClass('roller-card-4');
+                    $(this).addClass('roller-card-'+i);
+                    $(this).css('height', 100 - i*10 + '%');
+                    $(this).css('bottom', 20 * i + 'px');
+                    // $(this).css('left', 100 * i + 'px');
+                    $(this).css('z-index', 9 - i);
+                    $(this).find('img').css('opacity', 1 - .2 * i);
+                    $(this).find('.roller-card-data img').css('opacity', 1 - .1 * i);
+                    $(this).find('.roller-card-data span').css('opacity', 1 - .2 * i);
+                    $(this).find('.roller-card-data').css('font-size', 100 - 10*i + '%');
+                });
+                dfc(); // Add DFC hovers
+            }
+            updateBrunchyRoller();
+
+            // Function to future load our cards
+            function futureLoad(){
+                $.get('https://apps.draftaholicsanonymous.com/p1p1/IKO?ajax', function(response) {
+                    data = response.data;
+                    $('.roller-col-left').append(
+                        `<div class="future-loaded" data-brunch-candidate-id="${data[0].id}">`
+                        +   `<img src="${data[0].image}" alt="${data[0].name}">`
+                        +`</div>`);
+                    $('.roller-col-right').append(
+                        `<div class="future-loaded" data-brunch-candidate-id="${data[1].id}">`
+                        +   `<img src="${data[1].image}" alt="${data[1].name}">`
+                        +`</div>`);
+                }, 'json');
+            }
+
+            for(fi=0; fi<10; fi++) {
+                setTimeout(futureLoad, 600 * fi); // future load some initial cards to work with
+            }
+
+            $(document).on('click', '.brunch-candidate', brunchyVote);
+            function brunchyVote(e){
+                e.preventDefault();
+                // ONLY SUBMIT THE VOTE IF THERE ARE FUTURE LOADED CARDS
+                if($('.future-loaded').length > 0) {
+                    // Future load more cards
+                    futureLoad();
+
+                    var $brunchCandidate1 = $('.roller-col-left').data('brunch-candidate');
+                    var $brunchCandidate2 = $('.roller-col-right').data('brunch-candidate');
+
+                    var $brunchiest, $brunchish;
+
+                    var error = false;
+                    if($(this).data('brunch-candidate-id') == $brunchCandidate1){
+                        brunchiest = $brunchCandidate1;
+                        brunchish = $brunchCandidate2;
+                        $brunchiest = $('.roller-col-left .brunch-candidate');
+                        $brunchish = $('.roller-col-right .brunch-candidate');
+                    } else if($(this).data('brunch-candidate-id') == $brunchCandidate2){
+                        brunchish = $brunchCandidate1;
+                        brunchiest = $brunchCandidate2;
+                        $brunchiest = $('.roller-col-right .brunch-candidate');
+                        $brunchish = $('.roller-col-left .brunch-candidate');
+                    } else{
+                        // alert($(this).data('brunch-candidate-id') + ': '+$brunchCandidate1+', '+$brunchCandidate2);
+                        alert('An error occured and your vote was not counted. Sorry!');
+                        error = true;
+                    }
+                    if(!error){
+                        $.post(
+                            'https://apps.draftaholicsanonymous.com/p1p1/IKO?ajax', 
+                            {
+                                'winning_card' : brunchiest,
+                                'losing_card' : brunchish,
+                                'set_name' :'Ikoria: Lair of Behemoths',
+                                '_token':"UtVbHxDfJpjGu8XJITZh08LGveAArwQSfxZAFjti",
+                            },                  
+                            function(data){ 
+                                // data will contain the movement/stats of the cards we just voted on
+                                $('<div class="roller-card-data">'+data.brunchiest.deltaRank+'<p><img src="/images/icon-'+data.brunchiest.icon+'.png" /></p><p>#'+data.brunchiest.endRank+'</p></div>'
+                                ).hide().fadeIn().appendTo($brunchiest);
+                                $('<div class="roller-card-data">'+data.brunchish.deltaRank+'<p><img src="/images/icon-'+data.brunchish.icon+'.png" /></p><p>#'+data.brunchish.endRank+'</p></div>'
+                                ).hide().fadeIn().appendTo($brunchish);
+
+                                loadResultsTable();
+                            }
+                        );
+                    }
+
+                    // Slide our brunch-candidates back in the list and set our future-loaded cards to replace the brunch-candidates. 
+                    $('.roller-col-left').prepend($('.roller-col-left .future-loaded'));
+                    $('.roller-col-right').prepend($('.roller-col-right .future-loaded'));
+                    $('.brunch-candidate').removeClass('brunch-candidate');
+                    $futureLoaded = $('.future-loaded:first-child');
+                    // $futureLoaded.hide();
+                    $futureLoaded.addClass('roller-card');
+                    $futureLoaded.addClass('brunch-candidate');
+                    $futureLoaded.removeClass('future-loaded');
+                    // $futureLoaded.show();
+
+                    // Update our brunch-candidate IDs
+                    $('.roller-col-left').data('brunch-candidate', $('.roller-col-left .brunch-candidate').data('brunch-candidate-id'));
+                    $('.roller-col-right').data('brunch-candidate', $('.roller-col-right .brunch-candidate').data('brunch-candidate-id'));
+
+                    // If there are 5+ .roller-cards, remove excess
+                    if($('.roller-col-left .roller-card').length > 5)
+                        $('.roller-col-left .roller-card:gt(4)').remove();
+                    if($('.roller-col-right .roller-card').length > 5)
+                        $('.roller-col-right .roller-card:gt(4)').remove();
+                    // Update our roller
+                    updateBrunchyRoller();
+                }
+            };
+
+            function loadResultsTable(){
+                // $('.draftaholics-loader').fadeIn();
+                $.get('https://apps.draftaholicsanonymous.com/p1p1/IKO/results?ajax', {}, 
+                function(response){
+                    data = response.data;
+
+                    $('.a-brunchy-result-set').html(
+                        '<table cellspacing="0"><thead>' +
+                        '<tr class="table-header">' +
+                        '<td class="colour-col">#</td>' +
+                        '<td class="colour-col">&nbsp;</td>' +
+                        '<td>Card Name</td>' +
+                        '<td class="score-col">Score</td>' +
+                        '</tr></thead><tbody></tbody>' +
+                        '</table>');
+
+                    $.each(data, function(i){
+                        $('.a-brunchy-result-set table tbody').append(
+                            '<tr data-preview-image="'+ data[i].image +'">' +
+                            '<td>'+ data[i].rank +'</td>' +
+                            '<td><span class="colour '+ data[i].color +'"></span></td>' +
+                            '<td>'+ data[i].name +'</td>' +
+                            '<td>'+ data[i].elo +'</td>' +
+                            '</tr>');
+                    }); 
+                    $('.draftaholics-loader').fadeOut();
+                    $('.a-brunchy-preview').css('opacity', 1);
+                }, 'json');
+            }
+            loadResultsTable();
+
+
+            $(document).on('mouseover click touch', '.a-brunchy-result-set tbody tr', showCandidatePreview);
+            function showCandidatePreview(){
+                $('.a-brunchy-preview').html('<img src="'+ $(this).data('preview-image') +'" />');
+            }
+
+            // A hack for DFCs. 
+            function dfc(){};
+        })
+
+    </script>
+
+            </body>
+</html>
